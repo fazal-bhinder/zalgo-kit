@@ -1,0 +1,47 @@
+{
+  "name": "zalgo-kit",
+  "version": "0.1.0",
+  "description": "Zalgo / glitch text generator (seeded, three-zone intensity), a renderability estimate for pasted glitch text, and 17 Unicode style converters (bold, cursive, gothic, bubble, small caps and more). Zero dependencies.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist && esbuild src/index.ts --bundle --format=esm --platform=neutral --target=es2022 --outfile=dist/index.js && tsc -p .",
+    "prepublishOnly": "npm run build && npm test",
+    "test": "tsx test/run.ts"
+  },
+  "keywords": [
+    "zalgo",
+    "zalgo-text",
+    "glitch-text",
+    "unicode",
+    "fancy-text",
+    "text-styles",
+    "combining-characters"
+  ],
+  "homepage": "https://fontglitch.com",
+  "license": "MIT",
+  "author": "Fazal (https://github.com/fazal-bhinder)",
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "esbuild": "^0.28.2"
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazal-bhinder/zalgo-kit.git"
+  },
+  "bugs": "https://github.com/fazal-bhinder/zalgo-kit/issues",
+  "sideEffects": false
+}
