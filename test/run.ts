@@ -50,6 +50,14 @@ test('glitchify never adds marks to whitespace', () => {
   assert.ok(!/\s\p{M}/u.test(out), 'expected no combining mark to follow a space');
 });
 
+test('glitchify never emits the three marks Telegram turns into spaces', () => {
+  const telegramBroken = /[\u030A\u0333\u033F]/u;
+  for (let seed = 1; seed <= 200; seed++) {
+    const out = glitchify('the quick brown fox', { above: 100, mid: 100, below: 100 }, seed);
+    assert.ok(!telegramBroken.test(out), `seed ${seed} emitted a Telegram-broken mark`);
+  }
+});
+
 test('countMarks matches an independently-derived Unicode Mn count', () => {
   const out = glitchify('abcdef', { above: 80, mid: 40, below: 80 }, 11);
   const ours = countMarks(out).total;

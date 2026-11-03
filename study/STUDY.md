@@ -20,6 +20,10 @@ Write-up: https://fontglitch.com/guides/zalgo-text-discord-telegram-whatsapp-sla
 
 Raw data is in `results/*.json`.
 
+## Follow-up
+
+zalgo-kit 0.1.1 (4 November 2026) removes U+030A, U+0333 and U+033F from the mark pools, so `glitchify` output no longer breaks on Telegram. A regression test in `test/run.ts` checks this.
+
 ## Limits
 
 Web clients only, one day, one account per app. Mobile apps weren't tested. The rules can change without notice.
