@@ -1,0 +1,46 @@
+[
+  {
+    "id": "subtle",
+    "label": "Subtle (15/0/15)",
+    "text": "z̰̰̏a̰̅ͦl̠͉̍̂g̺͆ö̗̥́ t͌ͅe̗͙̎̎s͓͍͗̌t͖̹̄",
+    "codePoints": 38,
+    "utf16": 38,
+    "utf8Bytes": 66,
+    "graphemes": 10,
+    "marks": 28,
+    "maxMarksOnOneChar": 4
+  },
+  {
+    "id": "default",
+    "label": "Default (45/15/45)",
+    "text": "z̵̘͈̮̰͖̖̏ͨaͪ͑ͨ҉̺̯̩l̹̎̈͒͌̂̕͟g̵͓͍̤̘͇͖̾͘o̠̻̮̪̊̄̊̚͢͠ t̨̟́̊̾͗̑͝e͕̯̺̩͛̔ͣ̇͡ͅs̟̖̼̎ͥͣ̇͡͞t̨̹̹̮͍ͤ̎̉ͣ",
+    "codePoints": 89,
+    "utf16": 89,
+    "utf8Bytes": 168,
+    "graphemes": 10,
+    "marks": 79,
+    "maxMarksOnOneChar": 10
+  },
+  {
+    "id": "heavy",
+    "label": "Heavy (65/25/65)",
+    "text": "z̷̛̮̰͖̖̮͎̠̏ͨ̀a̡̬̮̿͆͐̔̌̈́ͤl̵͓͍̤̘͇͖̹̥̘ͦ̎̎̓̎̾ͨg̶̡̲̊ͧͧͪ̒͑̽̌͊͘͡ơ̡͕̯̺̩̹̖͌̑͗̒͛̔͡ͅ t̗̻̼̞ͣ̇̒̾̉̀͗͞ͅe̡̛̝̥̲͈̋̓̓̂͜͞ş̢̳̘̲̳̮̤̱̝͆̎̽̕͡ţ͉̖͎̝̙͍̫̺͈̈́͐̎́̀͡",
+    "codePoints": 136,
+    "utf16": 136,
+    "utf8Bytes": 262,
+    "graphemes": 10,
+    "marks": 126,
+    "maxMarksOnOneChar": 17
+  },
+  {
+    "id": "max",
+    "label": "Max (100/100/100)",
+    "text": "z̴̵̷̴̛̏ͨ̀͐̀̕͘͢͢͠҉̵̯̩̗̥̞̬̮ͅͅa̛̘̣̥͈̎̎̓̎̾ͨ͗̌͆ͫͩ͟͜͡l̶̜̟̳͚̺̼ͪ̒͑̽̌͊ͫ́̊̾͗͝ḡ̢̹͙̻̰̾ͤͮ̕͟͟͝͝͞ǫ̶̴̼̹̘̮̍ͣ́́̕͜͢͞͞͝ t̡̊̋҉̕͝҉̷̧̢̲̕͜͡ê̫͙̜̇́̆͌̈́͐͢s̡̗̬͓͓̘̞͕̬͔̬͕̟̖ͨ̍ͪ̐̅ͩ͊̔ͧ͑͒ͧ͌ͬ́͘t̡̨̙͈̮̞͈̻̺̝̺̓ͅ",
+    "codePoints": 175,
+    "utf16": 175,
+    "utf8Bytes": 340,
+    "graphemes": 10,
+    "marks": 165,
+    "maxMarksOnOneChar": 30
+  }
+]

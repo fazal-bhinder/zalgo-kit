@@ -1,0 +1,20 @@
+{
+  "platform": "Telegram Web A (web.telegram.org/a, Brave, macOS)",
+  "date": "2026-11-03",
+  "method": "Pasted into Saved Messages and sent. Read back from the rendered message and from the edit box (Up arrow), which matched. The composer held the exact string before sending.",
+  "results": {
+    "subtle":  {"sent_cp": 38,  "stored_cp": 38,  "identical": true},
+    "default": {"sent_cp": 89,  "stored_cp": 89,  "identical": false, "changed": ["U+030A -> U+0020 (x3)"]},
+    "heavy":   {"sent_cp": 136, "stored_cp": 136, "identical": false, "changed": ["U+033F -> U+0020", "U+030A -> U+0020", "U+0333 -> U+0020 (x2)"]},
+    "max":     {"sent_cp": 175, "stored_cp": 175, "identical": false, "changed": ["U+030A -> U+0020 (x2)", "U+0333 -> U+0020"]},
+    "a6":      {"marks_per_letter": 6,  "identical": true},
+    "a8":      {"marks_per_letter": 8,  "identical": true},
+    "long5":   {"letters": 20, "marks_per_letter": 5, "identical": true}
+  },
+  "all_marks_test": {
+    "sent": "'a' + each of U+0300..U+036F and U+0489 (113 marks)",
+    "changed": ["U+030A COMBINING RING ABOVE -> space", "U+0333 COMBINING DOUBLE LOW LINE -> space", "U+033F COMBINING DOUBLE OVERLINE -> space"],
+    "unchanged": 110
+  },
+  "conclusion": "No mark limit. Exactly three combining marks are replaced by a plain space, which splits the word visually."
+}

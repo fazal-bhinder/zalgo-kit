@@ -1,0 +1,14 @@
+{
+  "platform": "Slack (app.slack.com web client, Brave, macOS)",
+  "date": "2026-11-03",
+  "method": "Pasted into a DM to self and sent. Read back from the rendered message text.",
+  "results": {
+    "subtle":   {"sent_cp": 38,  "received_cp": 38,  "equals_NFC_of_sent": true},
+    "default":  {"sent_cp": 89,  "received_cp": 89,  "equals_NFC_of_sent": true},
+    "heavy":    {"sent_cp": 136, "received_cp": 134, "equals_NFC_of_sent": true},
+    "max":      {"sent_cp": 175, "received_cp": 172, "equals_NFC_of_sent": true},
+    "allmarks": {"sent_cp": 226, "received_cp": 208, "equals_NFC_of_sent": true},
+    "a20":      {"marks_per_letter": 20, "sent_cp": 105, "received_cp": 103, "equals_NFC_of_sent": true}
+  },
+  "conclusion": "Slack normalizes text to Unicode NFC: marks are reordered by combining class and letter+mark pairs with a precomposed form are merged (a + U+0300 -> U+00E0). The text is canonically equivalent and looks the same. No mark limit."
+}

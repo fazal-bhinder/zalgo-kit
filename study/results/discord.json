@@ -1,0 +1,17 @@
+{
+  "platform": "Discord (web client, Brave, macOS)",
+  "date": "2026-11-03",
+  "method": "Pasted into the message box of a private server channel and sent. Read back from the rendered message and from the message edit box (Up arrow), which matched: Discord stores the trimmed text, so every reader sees the trimmed version. The composer held the full string before sending.",
+  "samples_received": {"subtle":"z̰̰̏a̰̅ͦl̠͉̍̂g̺͆ö̗̥́ t͌ͅe̗͙̎̎s͓͍͗̌t͖̹̄","default":"z̵̘͈̏ͨaͪ͑ͨ҉̺̯̩l̎̈͒͌̂g̵͓͍̾͘o̊̄̊̚͠ t́̊̾͗est̨","heavy":"z̷̛̏ͨ̀a̿͆͐̔̌lͦ̎̎̓̎g̊ͧͧͪ̒o͌̑͗̒͛ tͣ̇̒̾̉est","max":"z̛̏ͨ̀͐҉̵̯̩̗ͅa̎̎̓̎̾lͪ̒͑̽̌ḡ̾ͤͮ͝o̍ͣ́̕͞ t҉҉esͨ̍ͪ̐̅t̡̨̙̓ͅ"},
+  "controlled": {
+    "note": "Letters 'abcde' (or a-t for long*) each followed by N marks: above = U+0300.., below = U+0316... Values are marks kept per letter.",
+    "a4":  {"sent_per_letter": 4, "kept_per_letter": [4,4,4,4,4]},
+    "a5":  {"sent_per_letter": 5, "kept_per_letter": [5,5,5,5,5]},
+    "a6":  {"sent_per_letter": 6, "kept_per_letter": [5,5,5,5,5]},
+    "a8":  {"sent_per_letter": 8, "kept_per_letter": [5,5,5,5,5]},
+    "m33": {"sent_per_letter": "3 above + 3 below", "kept_per_letter": [5,5,5,5,5], "kept": "first 5 in order (3 above, 2 below)"},
+    "m44": {"sent_per_letter": "4 above + 4 below", "kept_per_letter": [5,5,5,5,5], "kept": "first 5 in order (4 above, 1 below)"},
+    "long3": {"sent_per_letter": 3, "letters": 20, "kept_per_letter": [3,3,3,3,3,3,3,3,3,3,0,0,0,0,2,3,3,3,3,3]},
+    "long5": {"sent_per_letter": 5, "letters": 20, "kept_per_letter": [5,5,5,5,5,5,0,0,0,0,0,5,5,5,0,0,4,4,0,1]}
+  }
+}

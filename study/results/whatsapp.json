@@ -1,0 +1,15 @@
+{
+  "platform": "WhatsApp Web (web.whatsapp.com, Brave, macOS)",
+  "date": "2026-11-03",
+  "method": "Pasted into the 'Message yourself' chat and sent. Read back from the rendered sent bubble.",
+  "results": {
+    "subtle":   {"sent_cp": 38,  "received_cp": 38,  "identical": true},
+    "default":  {"sent_cp": 89,  "received_cp": 89,  "identical": true},
+    "heavy":    {"sent_cp": 136, "received_cp": 136, "identical": true},
+    "max":      {"sent_cp": 175, "received_cp": 175, "identical": true},
+    "allmarks": {"sent_cp": 226, "received_cp": 226, "identical": true, "note": "every mark U+0300..U+036F plus U+0489"},
+    "a20":      {"marks_per_letter": 20, "sent_cp": 105, "received_cp": 105, "identical": true}
+  },
+  "rendering": "Text arrives intact, but the chat bubble doesn't grow taller for stacked marks, so heavy zalgo overlaps the lines above and below.",
+  "conclusion": "No filtering at all. What you paste is exactly what arrives."
+}
