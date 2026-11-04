@@ -20,6 +20,8 @@ Write-up: https://fontglitch.com/guides/zalgo-text-discord-telegram-whatsapp-sla
 
 Raw data is in `results/*.json`.
 
+**Note (added 4 November 2026):** two letters in the generated Discord samples came back with 7 and 11 marks (`default` "a" and `max` "z" in `results/discord.json`). Both contain U+0489, which is outside U+0300–U+036F, and the count restarts after it (the "z" is 5 marks, then U+0489, then 5 more). So the Discord limit looks like "at most 5 consecutive marks from U+0300–U+036F" rather than a hard cap per letter. That's two cases, so treat it as a hypothesis.
+
 ## Follow-up
 
 zalgo-kit 0.1.1 (4 November 2026) removes U+030A, U+0333 and U+033F from the mark pools, so `glitchify` output no longer breaks on Telegram. A regression test in `test/run.ts` checks this.
