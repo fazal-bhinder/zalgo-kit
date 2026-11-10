@@ -1,6 +1,6 @@
 {
   "name": "zalgo-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zalgo / glitch text generator (seeded, three-zone intensity), a renderability estimate for pasted glitch text, and 17 Unicode style converters (bold, cursive, gothic, bubble, small caps and more). Zero dependencies.",
   "type": "module",
   "exports": {
