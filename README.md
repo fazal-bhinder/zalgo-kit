@@ -1,6 +1,6 @@
 # zalgo-kit
 
-Zalgo (glitch) text that you can control. Combining marks are stacked above the letters, through them, and below them, and each of the three zones has its own intensity. Pass a seed to get the same output every time. The kit also includes a renderability estimate, which warns when text is likely to get cut off or show up as boxes after it is pasted, and 17 Unicode "fancy font" converters (bold, cursive, gothic, bubble, small caps, wide and more). It is pure TypeScript with zero dependencies and no DOM.
+Zalgo (glitch) text that you can control. Combining marks are stacked above the letters, through them, and below them, and each of the three zones has its own intensity. Pass a seed to get the same output every time. The kit also includes a renderability estimate, which warns when text is likely to get cut off after it is pasted (Discord keeps 5 marks per letter; name fields count every mark), and 17 Unicode "fancy font" converters (bold, cursive, gothic, bubble, small caps, wide and more). It is pure TypeScript with zero dependencies and no DOM.
 
 Powers https://fontglitch.com
 
@@ -20,7 +20,7 @@ glitchify('hello', { above: 60, mid: 20, below: 60 }, 42);   // seeded: same out
 glitchify('hello', ZALGO_HEAVY_INTENSITY);                   // the classic heavy look
 ```
 
-Each zone takes a value from 0 to 100. At 100, a zone can stack up to 14 marks on each character. `mid` (strikethrough and overlay marks) is the zone most likely to render as boxes on older systems, which is why it has its own control. Whitespace is never glitched. Seeded output comes from mulberry32, so it is stable across runtimes.
+Each zone takes a value from 0 to 100. At 100, a zone can stack up to 14 marks on each character. `mid` (strikethrough and overlay marks) crosses the letters and makes text hardest to read, which is why it has its own control. Whitespace is never glitched. Seeded output comes from mulberry32, so it is stable across runtimes.
 
 ### Will it survive being pasted?
 

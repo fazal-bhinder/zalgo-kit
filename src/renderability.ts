@@ -41,8 +41,8 @@ export function assessRenderability(glitchedText: string, visibleCharCount: numb
       marksPerCharacter,
       label: 'May get trimmed',
       detail:
-        'Medium mark density. Some apps cap field length by byte count, not character count — ' +
-        'this may get cut off in short fields like usernames or titles.',
+        'Medium mark density. Discord keeps at most 5 marks per letter, and name fields count ' +
+        'every mark, so this may get cut in Discord or in a username.',
     };
   }
 
@@ -51,7 +51,7 @@ export function assessRenderability(glitchedText: string, visibleCharCount: numb
     marksPerCharacter,
     label: 'High risk of breaking',
     detail:
-      'Heavy mark density. Expect truncation in short fields, and possible box/placeholder ' +
-      'glyphs on older devices or apps with limited Unicode support.',
+      'Heavy mark density. Discord will trim it and a name field will run out of room after a ' +
+      'few letters. WhatsApp, Slack and Telegram kept every mark it now uses in our test.',
   };
 }
